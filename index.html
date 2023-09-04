@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Libre+Baskerville&family=Rammetto+One&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">💵Currency Converter💵</div>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+
+            <!-- for getting amount: -->
+            <label for="quantity">Choose amount: </label>
+            <input type="number" name="quantity" min="1">
+
+            <!-- for getting dropdown menu: -->
+            <label for="currency">Choose a currency: </label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            
+            <button class="btn" type="submit">Submit</button>
+
+        </form>
+        <div class="output">
+            <h2>Here are your converted currencies across the world:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
